@@ -77,13 +77,13 @@ All the characteristics is already disjoint that means they are all have no inte
 | --- | --- | --- |
 |A1| "2022/11/18" | time.Date(2022, 11, 18, 0, 0, 0, 0, time.UTC), false
 |A2| "2022/11/18T21:00:00" | time.Date(2022, 11, 18, 21, 0, 0, 0, time.UTC), false
-|A3| "2022/11/18T21:00:05Z07:00"  | time.Date(2022, 11, 18, 0, 0, 0, 0, time.LoadLocation("Asia/Jakarta)), false
+|A3| "2022/11/18T21:00:05Z"  | time.Date(2022, 11, 18, 0, 0, 0, 0, time.UTC), false
 |A4| "2022.11.18" |time.Date(2022, 11, 18, 0, 0, 0, 0, time.UTC), false
 |A5| "2022.11.18T21:00:00" |  time.Date(2022, 11, 18, 21, 0, 0, 0, time.UTC), false
-|A6| "2022.11.18T21:00:05Z07:00" | time.Date(2022, 11, 18, 0, 0, 0, 0, time.LoadLocation("Asia/Jakarta)), false
+|A6| "2022.11.18T21:00:05Z" | time.Date(2022, 11, 18, 0, 0, 0, 0, time.UTC), false
 |A7| "2022-11-18" | time.Date(2022, 11, 18, 0, 0, 0, 0, time.UTC), false
 |A8| "2022-11-18T21:00:00" | time.Date(2022, 11, 18, 21, 0, 0, 0, time.UTC), false
-|A9| "2022-11-18T21:00:05Z07:00" | time.Date(2022, 11, 18, 0, 0, 0, 0, time.LoadLocation("Asia/Jakarta)), false
+|A9| "2022-11-18T21:00:05Z" | time.Date(2022, 11, 18, 0, 0, 0, 0, time.UTC), false
 |A10|  "20221118" |  nil, true
 
 
@@ -110,13 +110,13 @@ Since the ACoC doesn't have any combination we will use all the possible test va
 | --- | --- |
 |A1 | "2022/11/18" |
 |A2 | "2022/11/18T21:00:00" |
-|A3 | "2022/11/18T21:00:05Z07:00"  |
+|A3 | "2022/11/18T21:00:05Z"  |
 |A4 | "2022.11.18" |
 |A5 | "2022.11.18T21:00:00" |
-|A6 | "2022.11.18T21:00:05Z07:00" |
+|A6 | "2022.11.18T21:00:05Z" |
 |A7 | "2022-11-18" |
 |A8 | "2022-11-18T21:00:00" |
-|A9 | "2022-11-18T21:00:05Z07:00" |
+|A9 | "2022-11-18T21:00:05Z" |
 |A10 |  "20221118" |
 
 ## Existing Test 
